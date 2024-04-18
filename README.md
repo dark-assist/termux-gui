@@ -5,13 +5,13 @@ This script allows you to enhance your Termux experience by adding a graphical u
 ## Installation
 
 1. Update Termux and install Git:
-    ```bash                                                                                              apt update && apt install git -y
-    ```
-
+```bash
+   apt update && apt install git -y
+```
 2. Clone the `termux-gui` repository:
-    ```bash                                                                                              git clone https://github.com/dark-assist/termux-gui
-    ```
-
+```bash
+   git clone https://github.com/dark-assist/termux-gui
+````
 3. Navigate to the `termux-gui` directory:
     ```bash
     cd termux-gui

@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # This is a simple bash script for installing Termux gui version work on Termux-x11.
-#cradit Sanatani-hacker.
+# Credit Sanatani-hacker.
 clear
 echo "TERMUX Xfce4 ENVIRONMENT SETUP SCRIPT BY SANATANI-HACKER "
 echo "Telegram: https://t.me/temuxhacking"
@@ -8,7 +8,7 @@ echo "Github: https://github.com/dark-assist"
 sleep 2.5
 cd $HOME
 echo "Updating Termux..."
-apt update;apt install apt -y;apt update;yes|apt upgrade
+apt update;apt install apt -y;apt update
 clear
 echo "Installing X11-repo....."
 apt install x11-repo -y
@@ -20,7 +20,7 @@ clear
 echo "Installing Fish Shell for Better Look"
 apt install fish -y
 clear
-mkdir $HOME/.backup/shell/
+mkdir $HOME/.backup/ && mkdir $HOME/.backup/shell/
 
 config_file="/data/data/com.termux/files/home/.config/fish/config.fish"
 
@@ -33,7 +33,7 @@ echo "Went to Use Our Sanatani Shell Prompt ?"
 read answer
 
 if [ "$answer" = "yes" ]; then
-    echo "if status is-interactive
+    echo 'if status is-interactive
     # Commands to run in interactive sessions can go here
 set -g fish_greeting (set_color green) "Welcome SANATANI-HACKER" (set_color normal)
 function fish_prompt
@@ -52,11 +52,11 @@ function fish_prompt
     set_color normal
     echo -n ' '
 end
-end " > ~/.config/fish/config.fish
+end' > ~/.config/fish/config.fish
 elif [ "$answer" = "no" ]; then
     echo ":)"
 else
-    echo "Please Answer in "yes" or "no" Statment."
+    echo "Please Answer in 'yes' or 'no' Statement."
 fi
 clear
 echo "Trying to Print Your Device CPU Architecture."
@@ -110,7 +110,7 @@ clear
 #Creating Links for Easy GUI Start.
 
 echo "kill -9 $(pgrep -f "termux.x11") 2>/dev/null
-        pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+        pulseaudio --start --load='module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1' --exit-idle-time=-1
         termux-x11 :1 &
         sleep 3
         am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1

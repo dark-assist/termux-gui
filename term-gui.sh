@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+tu#!/data/data/com.termux/files/usr/bin/bash
 # This is a simple bash script for installing Termux gui version work on Termux-x11.
 # Credit Sanatani-hacker.
 clear
@@ -106,6 +106,9 @@ interval=1
 
 draw_progress_bar $duration $interval
 
+clear
+echo "Installing Chrome Browser."
+apt install chromium -y
 clear
 #Creating Links for Easy GUI Start.
 

@@ -13,5 +13,5 @@ apt update && apt install git -y && git clone https://github.com/dark-assist/ter
 If you went to restore your default prompt just run :-
 
 ```bash
-bash $HOME/term-gui/prompt.sh
+bash $HOME/termux-gui/prompt.sh
 ```

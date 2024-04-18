@@ -20,6 +20,15 @@ clear
 echo "Installing Fish Shell for Better Look"
 apt install fish -y
 clear
+mkdir $HOME/.backup/shell/
+
+config_file="/data/data/com.termux/files/home/.config/fish/config.fish"
+
+if [ -f "$config_file" ]; then
+    echo "Fish Shell config File Found, Trying to Backup it." && cp /data/data/com.termux/files/home/.config/fish/config.fish $HOME/.backup/shell/
+else
+    echo "Fish shell configuration File Not Found :)"
+fi
 echo "Went to Use Our Sanatani Shell Prompt ?"
 read answer
 
@@ -48,15 +57,6 @@ elif [ "$answer" = "no" ]; then
     echo ":)"
 else
     echo "Please Answer in "yes" or "no" Statment."
-fi
-mkdir $HOME/.backup/shell/
-
-config_file="/data/data/com.termux/files/home/.config/fish/config.fish"
-
-if [ -f "$config_file" ]; then
-    echo "Fish Shell config File Found, Trying to Backup it." && cp 
-else
-    echo "Fish shell configuration File Not Found :)"
 fi
 clear
 echo "Trying to Print Your Device CPU Architecture."

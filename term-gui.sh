@@ -125,4 +125,5 @@ echo "kill -9 $(pgrep -f "termux.x11") 2>/dev/null
 chmod 777 $PREFIX/bin/termgui
 sleep 2
 clear
+echo "Run termgui to Start Gui"
 echo "I will Update This Soon With More Customisation."

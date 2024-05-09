@@ -37,7 +37,7 @@ bash $HOME/termux-gui/prompt.sh
 
 ## Tips
 
-- If you encounter errors during the installation of our special shell prompt, try uninstalling any >
+- If you encounter errors during the installation of our special shell prompt, try uninstalling your previous sell prompt changer.
 
 ## Contributing
 

@@ -1,4 +1,4 @@
-tu#!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 # This is a simple bash script for installing Termux gui version work on Termux-x11.
 # Credit Sanatani-hacker.
 clear
@@ -33,16 +33,16 @@ echo "Went to Use Our Sanatani Shell Prompt ?"
 read answer
 
 if [ "$answer" = "yes" ]; then
-    echo 'if status is-interactive
+    echo "if status is-interactive
     # Commands to run in interactive sessions can go here
 set -g fish_greeting (set_color green) "Welcome SANATANI-HACKER" (set_color normal)
 function fish_prompt
     set_color green
-    echo -n "sanatani"
+    echo -n 'sanatani'
     set_color normal
     echo -n '$'
     set_color blue
-    echo -n "hacker"
+    echo -n 'hacker'
     set_color normal
     echo -n ' '
     set_color green
@@ -52,7 +52,7 @@ function fish_prompt
     set_color normal
     echo -n ' '
 end
-end' > ~/.config/fish/config.fish
+end" > ~/.config/fish/config.fish
 elif [ "$answer" = "no" ]; then
     echo ":)"
 else
